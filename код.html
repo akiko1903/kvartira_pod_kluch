@@ -1,0 +1,82 @@
+</h3>
+                    <span>от 650 000 ₽</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=600" alt="Спальня">
+                <div class="img-overlay">
+                    <h3>Дизайнерская спальня</h3>
+                    <span>от 280 000 ₽</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1557805019-c4bdcbbadf2d?q=80&w=600" alt="Санузел">
+                <div class="img-overlay">
+                    <h3>Под ключ: санузел + кухня</h3>
+                    <span>от 420 000 ₽</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=600" alt="Прихожая">
+                <div class="img-overlay">
+                    <h3>Черновой ремонт</h3>
+                    <span>от 200 000 ₽</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1585796235507-9cc12e9e9e86?q=80&w=600" alt="Детская">
+                <div class="img-overlay">
+                    <h3>Комната для подростка</h3>
+                    <span>от 310 000 ₽</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider-wave" style="transform: rotate(180deg); margin-top: -1px; background: var(--bg-page);"></div>
+
+    <section id="contact" class="contact container">
+        <h2 style="text-align: center; font-size: 2.2rem;">Обсудить ваш проект</h2>
+        <p style="margin-bottom: 2rem; opacity: 0.8; max-width: 600px; margin-left:auto;margin-right:auto;">
+            Звонки принимаем строго с 08:00 до 20:00 по будням.<br>
+            Пишите в мессенджеры — отвечаем даже на объекте.
+        </p>
+        <div class="messengers" style="display: flex; gap: 1rem; justify-content: center; align-items: center; flex-wrap: wrap;">
+            
+            <!-- КНОПКА 1: Написать в MAX (ссылка ведет на WEB-версию) -->
+            <a href="https://web.max.ru/im?user=79001112233" target="_blank" class="btn btn-primary" style="padding: 16px 35px; font-size: 1.1rem;">
+                <i class="fa-solid fa-message-dots"></i> Написать в MAX
+            </a>
+
+            <!-- КНОПКА 2: Скопировать номер (функция JS сохранена) -->
+            <button onclick="copyPhone()" class="btn btn-outline" style="padding: 16px 35px; font-size: 1.1rem;">
+                <i class="fa-solid fa-copy"></i> Скопировать номер
+            </button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Квартира под ключ. Работаем официально.<br>
+        г. Балаково | Звонки: Пн–Пт с 08:00 до 20:00</p>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/a2b3c4d5e6.js" crossorigin="anonymous"></script>
+
+<!-- Скрипт для кнопки "Скопировать" -->
+<script>
+function copyPhone() {
+    const phoneNumber = "8 (908) 555-57-23";
+    
+    navigator.clipboard.writeText(phoneNumber).then(function(){
+        alert('Номер скопирован! Теперь откройте MAX и вставьте его в поиск.');
+    }).catch(function(err){
+        console.error('Ошибка копирования:', err);
+    });
+}
+</script>
+
+</body>
+</html>
